@@ -1,0 +1,99 @@
+.TABLESAPIIComponent{
+    background-color: #ffffff;
+
+    width: 100vh;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 20px 1fr;
+    grid-template-areas:
+    "lOGO LOGO LOGO LOGO" 
+    "TABLEBARCHART  TABLECMEGROUP  B3TABLE GOVTABLE"
+}
+
+p{
+    font-size: 20px;
+}
+
+.logo{
+   grid-area: LOGO;
+   display: flex;
+   justify-items: left;
+   margin: 20px;
+   position: absolute;
+   top: 5px; left: 40px;
+}
+
+#UOUTable{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    border-style:solid;
+    border-width: 4px;
+    border-color: #000000;
+    font-size: 100%;
+    font-weight:bold;
+}
+
+h1{
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: bold;
+}
+.BarchartTable{
+    grid-area: TABLEBARCHART;
+    margin: 20px;
+    font-family: sans-serif;
+}
+
+
+#DinamicTable{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    border-style:solid;
+    border-width: 4px;
+    border-color: #000000;
+    font-size: 100%;
+    font-weight:bold;
+}
+
+.CmegroupTable{
+    grid-area: TABLECMEGROUP;
+    margin: 20px;
+    font-family: sans-serif;
+}
+
+#SecondTableCmegroup{
+    border-style:solid;
+    border-width: 4px;
+    border-color: #000000;
+    font-size: 100%;
+    font-weight:bold;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+
+.TableB3{
+    grid-area: B3TABLE;
+    margin: 20px;
+    font-family: sans-serif;
+}
+
+#B3TABLEX{
+    border-style:solid;
+    border-width: 4px;
+    border-color: #000000;
+    font-size: 100%;
+    font-weight:bold;
+   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.bcbgovTablefourth{
+    grid-area: GOVTABLE ;
+    margin: 20px;
+    font-family: sans-serif;
+}
+#Fourthtable{
+    border-style:solid;
+    border-width: 4px;
+    border-color: #000000;
+    font-size: 100%;
+    font-weight:bold;
+   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
