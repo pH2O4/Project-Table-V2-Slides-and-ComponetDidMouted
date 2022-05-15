@@ -763,6 +763,7 @@ class Main extends Component {
     const fourthTable = async () => {
       const response = await Axios.get('http://localhost:8080/GettingDatasGettingDatasBCBGOV')
       const ArrayTableBCBGOV = await response.data
+      console.log( ArrayTableBCBGOV)
       for (let index = 0; index < ArrayTableBCBGOV[20].length; index++) {
         const element = ArrayTableBCBGOV[20];
         const table = await document.getElementById("0GOVROW")
@@ -901,7 +902,6 @@ class Main extends Component {
     const fivethTable = async () => {
       const response = await Axios.get('http://localhost:8080/GettingDatasUOU')
       const ArrayTableUOU = await response.data
-      console.log(ArrayTableUOU)
       for (let index = 401; index <= 403; index++) {
         const element = ArrayTableUOU[index];
         const table = await document.getElementById("UOUROW1")
@@ -939,15 +939,15 @@ class Main extends Component {
       }
     }
     const CallFunctionsForEachOne = async () => {
-        await firtTableBarchart()
-        await SecondTableCmegroup()
-      await ThirdTableMain()
-        await fourthTable()
-        await  fivethTable()
+        firtTableBarchart()
+        SecondTableCmegroup()
+       ThirdTableMain()
+         fourthTable()
+          fivethTable()
     }
 
     document.addEventListener('keydown', function(e) {
-      switch (e) {
+      switch (e.keyCode) {
           case 37:
               less();
               break;

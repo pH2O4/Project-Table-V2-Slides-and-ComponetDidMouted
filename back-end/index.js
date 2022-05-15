@@ -145,6 +145,7 @@ app.get("/GettingDatasCmegroup", async (req, res) => {
 });
 
 app.get("/GettingDatasGettingDatasBCBGOV", async (req, res) => {
+    
     const browser = await Puppeteer.launch({ headless: false });
     const page = await browser.newPage();
     await page.goto('https://ptax.bcb.gov.br/ptax_internet/consultaBoletim.do?method=exibeFormularioConsultaBoletim', {
@@ -182,7 +183,11 @@ app.get("/GettingDatasGettingDatasBCBGOV", async (req, res) => {
 
 app.get("/GettingDatasUOU", async (req, res) => {
 
-
+try {
+    
+} catch (error) {
+    
+}
     const browser = await Puppeteer.launch({ headless: false });
     const page = await browser.newPage();
     await page.goto('https://economia.uol.com.br/cotacoes/', {
