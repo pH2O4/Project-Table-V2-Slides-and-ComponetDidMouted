@@ -939,11 +939,11 @@ class Main extends Component {
       }
     }
     const CallFunctionsForEachOne = async () => {
-        firtTableBarchart()
-        SecondTableCmegroup()
-       ThirdTableMain()
-         fourthTable()
-          fivethTable()
+      await  firtTableBarchart()
+     await  SecondTableCmegroup()
+    await  ThirdTableMain()
+      // fourthTable()
+      await    fivethTable()
     }
 
     document.addEventListener('keydown', function(e) {
@@ -1063,6 +1063,8 @@ class Main extends Component {
                 <td ></td>
                 <td id="7TD"></td>
               </tr>
+              </tbody>
+              <tbody>
               <tr id="8">
                 <td ></td>
                 <td id="8TD"></td>
@@ -1095,7 +1097,7 @@ class Main extends Component {
                 <td ></td>
                 <td id="15TD"></td>
               </tr>
-            </tbody>
+              </tbody>
           </Table>
           <p><b>Fonte:</b> https://www.barchart.com/futures/quotes/CTK20/futures-prices</p>
         </div>
