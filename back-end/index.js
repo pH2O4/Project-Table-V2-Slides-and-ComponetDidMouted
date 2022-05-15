@@ -190,7 +190,7 @@ app.get("/GettingDatasUOU", async (req, res) => {
         // Remove the timeout
         timeout: 0
     });
-
+    await page.waitForTimeout(5000);
     const GetingDatas = await page.evaluate(async () => {
 
         const TBODYUOU = await document.querySelectorAll("tr")
