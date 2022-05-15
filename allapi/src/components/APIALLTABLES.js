@@ -942,7 +942,7 @@ class Main extends Component {
       await  firtTableBarchart()
      await  SecondTableCmegroup()
     await  ThirdTableMain()
-      // fourthTable()
+      // await fourthTable()
       await    fivethTable()
     }
 
@@ -1063,8 +1063,6 @@ class Main extends Component {
                 <td ></td>
                 <td id="7TD"></td>
               </tr>
-              </tbody>
-              <tbody>
               <tr id="8">
                 <td ></td>
                 <td id="8TD"></td>
