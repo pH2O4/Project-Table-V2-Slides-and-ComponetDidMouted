@@ -939,12 +939,23 @@ class Main extends Component {
       }
     }
     const CallFunctionsForEachOne = async () => {
-      //  await firtTableBarchart()
-       // await SecondTableCmegroup()
-     //  await ThirdTableMain()
-       // await fourthTable()
+        await firtTableBarchart()
+        await SecondTableCmegroup()
+      await ThirdTableMain()
+        await fourthTable()
         await  fivethTable()
     }
+
+    document.addEventListener('keydown', function(e) {
+      switch (e) {
+          case 37:
+              less();
+              break;
+          case 39:
+              Add();
+              break;
+      }
+  });
     let Cont = 0
     
     const Hidden = (Cont) => {
@@ -1015,7 +1026,7 @@ class Main extends Component {
           <img src={LOGO} height={50}></img>
         </div>
         <div>
-          <button onKeyDown={} onClick={() => Add()} id="RigthArrow"></button>
+          <button  onClick={() => Add()} id="RigthArrow"></button>
           <button onClick={() => less()} id="LeftArrow"></button>
         </div>
         <div id="BarchartTable">
