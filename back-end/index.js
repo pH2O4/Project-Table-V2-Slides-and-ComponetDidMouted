@@ -198,8 +198,8 @@ try {
     await page.waitForTimeout(10000);
     const GetingDatas = await page.evaluate(async () => {
 
-        const TBODYUOU = await document.querySelectorAll("tr")
-        const GtingATAG = await document.querySelectorAll("a")
+        const TBODYUOU = await document.getElementsByClassName("row")
+        const GtingATAG =  TBODYUOU.querySelectorAll("a")
         let TBODYUOUArray = []
         for (let index = 0; index < GtingATAG.length; index++) {
             const GetingATAG = GtingATAG[index].textContent
