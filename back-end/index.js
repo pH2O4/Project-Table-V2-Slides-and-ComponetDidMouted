@@ -149,10 +149,10 @@ app.get("/GettingDatasGettingDatasBCBGOV", async (req, res) => {
     const browser = await Puppeteer.launch({ headless: false });
     const page = await browser.newPage();
     await page.goto('https://ptax.bcb.gov.br/ptax_internet/consultaBoletim.do?method=exibeFormularioConsultaBoletim', {
-        waitUntil: ['load', 'domcontentloaded', 'networkidle0', 'networkidle2'],
         // Remove the timeout
         timeout: 0
     });
+        await page.waitForTimeout(5000);
     await page.click('input[class="botao"]')
     await page.waitForTimeout(5000);
     const GetingDatas = await page.evaluate(async () => {
@@ -195,7 +195,7 @@ try {
         // Remove the timeout
         timeout: 0
     });
-    await page.waitForTimeout(5000);
+    await page.waitForTimeout(10000);
     const GetingDatas = await page.evaluate(async () => {
 
         const TBODYUOU = await document.querySelectorAll("tr")

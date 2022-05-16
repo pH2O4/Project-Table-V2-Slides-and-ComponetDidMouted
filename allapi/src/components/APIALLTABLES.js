@@ -489,7 +489,6 @@ class Main extends Component {
     const ThirdTableMain = async () => {
       const response = await Axios.get('http://localhost:8080/GettingDatasB3')
       const ArrayTableB3 = response.data
-      console.log(ArrayTableB3)
       //FOR WITH SPAN ROW AND INTRODUCE TDS
       for (let index = 0; index < ArrayTableB3[28].length; index++) {
         const element = ArrayTableB3[28];
@@ -763,7 +762,6 @@ class Main extends Component {
     const fourthTable = async () => {
       const response = await Axios.get('http://localhost:8080/GettingDatasGettingDatasBCBGOV')
       const ArrayTableBCBGOV = await response.data
-      console.log( ArrayTableBCBGOV)
       for (let index = 0; index < ArrayTableBCBGOV[20].length; index++) {
         const element = ArrayTableBCBGOV[20];
         const table = await document.getElementById("0GOVROW")
@@ -902,35 +900,36 @@ class Main extends Component {
     const fivethTable = async () => {
       const response = await Axios.get('http://localhost:8080/GettingDatasUOU')
       const ArrayTableUOU = await response.data
-      for (let index = 401; index <= 403; index++) {
+      console.log(ArrayTableUOU)
+      for (let index = 402; index <= 404; index++) {
         const element = ArrayTableUOU[index];
         const table = await document.getElementById("UOUROW1")
         table.insertAdjacentHTML('beforeend', `
        <td> ${element} </td>
         `)
       }
-      for (let index = 405; index <= 407; index++) {
+      for (let index = 406; index <= 408; index++) {
         const element = ArrayTableUOU[index];
         const table = await document.getElementById("UOUROW2")
         table.insertAdjacentHTML('beforeend', `
        <td> ${element} </td>
         `)
       }
-      for (let index = 413; index <= 415; index++) {
+      for (let index = 414; index <= 416; index++) {
         const element = ArrayTableUOU[index];
         const table = await document.getElementById("UOUROW3")
         table.insertAdjacentHTML('beforeend', `
        <td> ${element} </td>
         `)
       }
-      for (let index = 416; index <= 418; index++) {
+      for (let index = 417; index <= 419; index++) {
         const element = ArrayTableUOU[index];
         const table = await document.getElementById("UOUROW4")
         table.insertAdjacentHTML('beforeend', `
        <td> ${element} </td>
         `)
       }
-      for (let index = 419; index <= 421; index++) {
+      for (let index = 420; index <= 422; index++) {
         const element = ArrayTableUOU[index];
         const table = await document.getElementById("UOUROW5")
         table.insertAdjacentHTML('beforeend', `
@@ -939,11 +938,12 @@ class Main extends Component {
       }
     }
     const CallFunctionsForEachOne = async () => {
-      await  firtTableBarchart()
-     await  SecondTableCmegroup()
-    await  ThirdTableMain()
-      // await fourthTable()
-      await    fivethTable()
+    //  await  firtTableBarchart()
+  //   await  SecondTableCmegroup()
+  //  await  ThirdTableMain()
+        await   fivethTable()
+       await fourthTable()
+
     }
 
     document.addEventListener('keydown', function(e) {
@@ -999,7 +999,7 @@ class Main extends Component {
        Cont = Cont + 1
      }
      Hidden(Cont)
-     console.log(Cont)
+  
    }
    const less = () =>{
      if(Cont <= 0){
@@ -1008,7 +1008,6 @@ class Main extends Component {
        Cont = Cont - 1
     } 
     Hidden(Cont)
-    console.log(Cont)
   }
     //  window.setTimeout('funcao()', intervalo_em_milisegundos);
     setInterval(function () {
