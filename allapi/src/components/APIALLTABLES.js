@@ -901,35 +901,35 @@ class Main extends Component {
       const response = await Axios.get('http://localhost:8080/GettingDatasUOU')
       const ArrayTableUOU = await response.data
       console.log(ArrayTableUOU)
-      for (let index = 402; index <= 404; index++) {
+      for (let index = 0; index <= 2; index++) {
         const element = ArrayTableUOU[index];
         const table = await document.getElementById("UOUROW1")
         table.insertAdjacentHTML('beforeend', `
        <td> ${element} </td>
         `)
       }
-      for (let index = 406; index <= 408; index++) {
+      for (let index = 10; index <= 12; index++) {
         const element = ArrayTableUOU[index];
         const table = await document.getElementById("UOUROW2")
         table.insertAdjacentHTML('beforeend', `
        <td> ${element} </td>
         `)
       }
-      for (let index = 414; index <= 416; index++) {
+      for (let index = 15; index <= 17; index++) {
         const element = ArrayTableUOU[index];
         const table = await document.getElementById("UOUROW3")
         table.insertAdjacentHTML('beforeend', `
        <td> ${element} </td>
         `)
       }
-      for (let index = 417; index <= 419; index++) {
+      for (let index = 18; index <= 20; index++) {
         const element = ArrayTableUOU[index];
         const table = await document.getElementById("UOUROW4")
         table.insertAdjacentHTML('beforeend', `
        <td> ${element} </td>
         `)
       }
-      for (let index = 420; index <= 422; index++) {
+      for (let index = 21; index <= 23; index++) {
         const element = ArrayTableUOU[index];
         const table = await document.getElementById("UOUROW5")
         table.insertAdjacentHTML('beforeend', `
@@ -938,11 +938,11 @@ class Main extends Component {
       }
     }
     const CallFunctionsForEachOne = async () => {
-      await  firtTableBarchart()
-    await  SecondTableCmegroup()
- await  ThirdTableMain()
+    //  await  firtTableBarchart()
+ //   await  SecondTableCmegroup()
+// await  ThirdTableMain()
         await   fivethTable()
-       await fourthTable()
+      // await fourthTable()
 
     }
 

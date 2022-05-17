@@ -199,12 +199,13 @@ try {
     const GetingDatas = await page.evaluate(async () => {
 
         const TBODYUOU = await document.getElementsByClassName("row")
-        const GtingATAG =  TBODYUOU.querySelectorAll("a")
-        let TBODYUOUArray = []
-        for (let index = 0; index < GtingATAG.length; index++) {
-            const GetingATAG = GtingATAG[index].textContent
-            TBODYUOUArray.push(GetingATAG)
-        }
+        const  GtingATAGA =  TBODYUOU[2].querySelectorAll("a")
+        let ArrayUOL = []
+       for (let index = 0; index < GtingATAGA.length; index++) {
+           const element = GtingATAGA[index].textContent
+           ArrayUOL.push(element)
+           
+       }
     /*    for (let indexBODY = 0; indexBODY < TBODYUOU.length; indexBODY++) {
             const TBODYUOUTD = await TBODYUOU[indexBODY].querySelectorAll("td")
             const getingTDS = (TBODYUOUTD) => {
@@ -218,11 +219,11 @@ try {
             TBODYUOUArray.push(getingTDS(TBODYUOUTD))
             console.log(TBODYUOUArray)
         }*/
-        const JsonTBODYUOUArray = JSON.stringify(TBODYUOUArray)
-        return (JsonTBODYUOUArray)
+        console.log(ArrayUOL)
+        return ( ArrayUOL )
 
     })
-
+    
     res.send(GetingDatas)
     await browser.close()
 
