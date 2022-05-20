@@ -938,10 +938,10 @@ class Main extends Component {
       }
     }
     const CallFunctionsForEachOne = async () => {
-    //  await  firtTableBarchart()
- //   await  SecondTableCmegroup()
+  //   await  firtTableBarchart()
+//    await  SecondTableCmegroup()
 // await  ThirdTableMain()
-        await   fivethTable()
+      //  await   fivethTable()
       // await fourthTable()
 
     }
@@ -1021,6 +1021,10 @@ class Main extends Component {
     return (
 
       <div className="TABLESAPIIComponent">
+        <div id="Alerta">
+          <h3> <span >ATENÇÃO:</span> As tabelas exibidas nesse RSS são de 5 sites diferentes, <br></br> qualquer alteração afetará 
+          na exibição das mesmas <br></br>,ou seja, qualquer má formatação por favor informar o setor de TI, obrigado! </h3>
+        </div>
         <div className="logo">
           <img src={LOGO} height={50}></img>
         </div>
