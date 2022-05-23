@@ -489,268 +489,269 @@ class Main extends Component {
     const ThirdTableMain = async () => {
       const response = await Axios.get('http://localhost:8080/GettingDatasB3')
       const ArrayTableB3 = response.data
+      console.log(ArrayTableB3)
       //FOR WITH SPAN ROW AND INTRODUCE TDS
-      for (let index = 0; index < ArrayTableB3[28].length; index++) {
-        const element = ArrayTableB3[28];
+      for (let index = 0; index < ArrayTableB3[29].length; index++) {
+        const element = ArrayTableB3[29];
         const table = await document.getElementById("B3TR1")
         table.insertAdjacentHTML('beforeend', `
        <td> <b> ${element[index]} </b></td>
         `)
       }
-      for (let index = 0; index < ArrayTableB3[29].length; index++) {
-        const element = ArrayTableB3[29];
-        const table = await document.getElementById("B3TR2")
-        table.insertAdjacentHTML('beforeend', `
-       <td> ${element[index]}</td>
-        `)
-      }
       for (let index = 0; index < ArrayTableB3[30].length; index++) {
         const element = ArrayTableB3[30];
-        const table = await document.getElementById("B3TR3")
+        const table = await document.getElementById("B3TR2")
         table.insertAdjacentHTML('beforeend', `
        <td> ${element[index]}</td>
         `)
       }
       for (let index = 0; index < ArrayTableB3[31].length; index++) {
         const element = ArrayTableB3[31];
-        const table = await document.getElementById("B3TR4")
+        const table = await document.getElementById("B3TR3")
         table.insertAdjacentHTML('beforeend', `
        <td> ${element[index]}</td>
         `)
       }
       for (let index = 0; index < ArrayTableB3[32].length; index++) {
         const element = ArrayTableB3[32];
-        const table = await document.getElementById("B3TR5")
+        const table = await document.getElementById("B3TR4")
         table.insertAdjacentHTML('beforeend', `
        <td> ${element[index]}</td>
         `)
       }
       for (let index = 0; index < ArrayTableB3[33].length; index++) {
         const element = ArrayTableB3[33];
-        const table = await document.getElementById("B3TR6")
+        const table = await document.getElementById("B3TR5")
         table.insertAdjacentHTML('beforeend', `
-       <td> ${element[index]} </td>
+       <td> ${element[index]}</td>
         `)
       }
       for (let index = 0; index < ArrayTableB3[34].length; index++) {
         const element = ArrayTableB3[34];
-        const table = await document.getElementById("B3TR7")
+        const table = await document.getElementById("B3TR6")
         table.insertAdjacentHTML('beforeend', `
        <td> ${element[index]} </td>
         `)
       }
       for (let index = 0; index < ArrayTableB3[35].length; index++) {
         const element = ArrayTableB3[35];
-        const table = await document.getElementById("B3TR8")
+        const table = await document.getElementById("B3TR7")
         table.insertAdjacentHTML('beforeend', `
        <td> ${element[index]} </td>
         `)
       }
       for (let index = 0; index < ArrayTableB3[36].length; index++) {
         const element = ArrayTableB3[36];
-        const table = await document.getElementById("B3TR9")
+        const table = await document.getElementById("B3TR8")
         table.insertAdjacentHTML('beforeend', `
        <td> ${element[index]} </td>
         `)
       }
       for (let index = 0; index < ArrayTableB3[37].length; index++) {
         const element = ArrayTableB3[37];
+        const table = await document.getElementById("B3TR9")
+        table.insertAdjacentHTML('beforeend', `
+       <td> ${element[index]} </td>
+        `)
+      }
+      for (let index = 0; index < ArrayTableB3[38].length; index++) {
+        const element = ArrayTableB3[38];
         const table = await document.getElementById("B3TR10")
         table.insertAdjacentHTML('beforeend', `
        <td> ${element[index]} </td>
         `)
       }
-      for (let index = 0; index < ArrayTableB3[50].length; index++) {
-        const element = ArrayTableB3[50];
+      for (let index = 0; index < ArrayTableB3[51].length; index++) {
+        const element = ArrayTableB3[51];
         const table = await document.getElementById("B3TR11")
         table.insertAdjacentHTML('beforeend', `
        <td> <b>${element[index]}</b> </td>
         `)
       }
-      for (let index = 0; index < ArrayTableB3[51].length; index++) {
-        const element = ArrayTableB3[51];
-        const table = await document.getElementById("B3TR12")
-        table.insertAdjacentHTML('beforeend', `
-       <td> ${element[index]} </td>
-        `)
-      }
       for (let index = 0; index < ArrayTableB3[52].length; index++) {
         const element = ArrayTableB3[52];
-        const table = await document.getElementById("B3TR13")
+        const table = await document.getElementById("B3TR12")
         table.insertAdjacentHTML('beforeend', `
        <td> ${element[index]} </td>
         `)
       }
       for (let index = 0; index < ArrayTableB3[53].length; index++) {
         const element = ArrayTableB3[53];
-        const table = await document.getElementById("B3TR14")
+        const table = await document.getElementById("B3TR13")
         table.insertAdjacentHTML('beforeend', `
        <td> ${element[index]} </td>
         `)
       }
       for (let index = 0; index < ArrayTableB3[54].length; index++) {
         const element = ArrayTableB3[54];
-        const table = await document.getElementById("B3TR15")
+        const table = await document.getElementById("B3TR14")
         table.insertAdjacentHTML('beforeend', `
        <td> ${element[index]} </td>
         `)
       }
       for (let index = 0; index < ArrayTableB3[55].length; index++) {
         const element = ArrayTableB3[55];
-        const table = await document.getElementById("B3TR16")
+        const table = await document.getElementById("B3TR15")
         table.insertAdjacentHTML('beforeend', `
        <td> ${element[index]} </td>
         `)
       }
       for (let index = 0; index < ArrayTableB3[56].length; index++) {
         const element = ArrayTableB3[56];
-        const table = await document.getElementById("B3TR17")
+        const table = await document.getElementById("B3TR16")
         table.insertAdjacentHTML('beforeend', `
        <td> ${element[index]} </td>
         `)
       }
       for (let index = 0; index < ArrayTableB3[57].length; index++) {
         const element = ArrayTableB3[57];
-        const table = await document.getElementById("B3TR18")
-        table.insertAdjacentHTML('beforeend', `
-       <td> ${element[index]} </td>
-        `)
-      }
-      for (let index = 0; index < ArrayTableB3[228].length; index++) {
-        const element = ArrayTableB3[228];
-        const table = await document.getElementById("B3TR19")
-        table.insertAdjacentHTML('beforeend', `
-       <td> <b> ${element[index]} </b></td>
-        `)
-      }
-      for (let index = 0; index < ArrayTableB3[229].length; index++) {
-        const element = ArrayTableB3[229];
-        const table = await document.getElementById("B3TR20")
-        table.insertAdjacentHTML('beforeend', `
-       <td> ${element[index]} </td>
-        `)
-      }
-      for (let index = 0; index < ArrayTableB3[230].length; index++) {
-        const element = ArrayTableB3[230];
-        const table = await document.getElementById("B3TR21")
-        table.insertAdjacentHTML('beforeend', `
-       <td> ${element[index]} </td>
-        `)
-      }
-      for (let index = 0; index < ArrayTableB3[231].length; index++) {
-        const element = ArrayTableB3[231];
-        const table = await document.getElementById("B3TR22")
-        table.insertAdjacentHTML('beforeend', `
-       <td><b> ${element[index]}</b> </td>
-        `)
-      }
-      for (let index = 0; index < ArrayTableB3[232].length; index++) {
-        const element = ArrayTableB3[232];
-        const table = await document.getElementById("B3TR23")
-        table.insertAdjacentHTML('beforeend', `
-       <td> ${element[index]} </td>
-        `)
-      }
-      for (let index = 0; index < ArrayTableB3[233].length; index++) {
-        const element = ArrayTableB3[233];
-        const table = await document.getElementById("B3TR24")
+        const table = await document.getElementById("B3TR17")
         table.insertAdjacentHTML('beforeend', `
        <td> ${element[index]} </td>
         `)
       }
       for (let index = 0; index < ArrayTableB3[234].length; index++) {
         const element = ArrayTableB3[234];
-        const table = await document.getElementById("B3TR25")
+        const table = await document.getElementById("B3TR18")
         table.insertAdjacentHTML('beforeend', `
-       <td> ${element[index]} </td>
+       <td><b> ${element[index]}</b> </td>
         `)
       }
       for (let index = 0; index < ArrayTableB3[235].length; index++) {
         const element = ArrayTableB3[235];
-        const table = await document.getElementById("B3TR26")
+        const table = await document.getElementById("B3TR19")
         table.insertAdjacentHTML('beforeend', `
-       <td> ${element[index]} </td>
+       <td> <b> ${element[index]} </b></td>
         `)
       }
       for (let index = 0; index < ArrayTableB3[236].length; index++) {
         const element = ArrayTableB3[236];
-        const table = await document.getElementById("B3TR27")
+        const table = await document.getElementById("B3TR20")
         table.insertAdjacentHTML('beforeend', `
        <td> ${element[index]} </td>
         `)
       }
       for (let index = 0; index < ArrayTableB3[237].length; index++) {
         const element = ArrayTableB3[237];
-        const table = await document.getElementById("B3TR28")
+        const table = await document.getElementById("B3TR21")
         table.insertAdjacentHTML('beforeend', `
        <td> ${element[index]} </td>
         `)
       }
       for (let index = 0; index < ArrayTableB3[238].length; index++) {
         const element = ArrayTableB3[238];
-        const table = await document.getElementById("B3TR29")
+        const table = await document.getElementById("B3TR22")
         table.insertAdjacentHTML('beforeend', `
        <td> ${element[index]} </td>
         `)
       }
       for (let index = 0; index < ArrayTableB3[239].length; index++) {
         const element = ArrayTableB3[239];
-        const table = await document.getElementById("B3TR30")
+        const table = await document.getElementById("B3TR23")
         table.insertAdjacentHTML('beforeend', `
        <td> ${element[index]} </td>
         `)
       }
       for (let index = 0; index < ArrayTableB3[240].length; index++) {
         const element = ArrayTableB3[240];
-        const table = await document.getElementById("B3TR31")
+        const table = await document.getElementById("B3TR24")
         table.insertAdjacentHTML('beforeend', `
        <td> ${element[index]} </td>
         `)
       }
       for (let index = 0; index < ArrayTableB3[241].length; index++) {
         const element = ArrayTableB3[241];
-        const table = await document.getElementById("B3TR32")
+        const table = await document.getElementById("B3TR25")
         table.insertAdjacentHTML('beforeend', `
        <td> ${element[index]} </td>
         `)
       }
       for (let index = 0; index < ArrayTableB3[242].length; index++) {
         const element = ArrayTableB3[242];
-        const table = await document.getElementById("B3TR33")
+        const table = await document.getElementById("B3TR26")
         table.insertAdjacentHTML('beforeend', `
        <td> ${element[index]} </td>
         `)
       }
       for (let index = 0; index < ArrayTableB3[243].length; index++) {
         const element = ArrayTableB3[243];
-        const table = await document.getElementById("B3TR34")
+        const table = await document.getElementById("B3TR27")
         table.insertAdjacentHTML('beforeend', `
        <td> ${element[index]} </td>
         `)
       }
       for (let index = 0; index < ArrayTableB3[244].length; index++) {
         const element = ArrayTableB3[244];
-        const table = await document.getElementById("B3TR35")
+        const table = await document.getElementById("B3TR28")
         table.insertAdjacentHTML('beforeend', `
        <td> ${element[index]} </td>
         `)
       }
       for (let index = 0; index < ArrayTableB3[245].length; index++) {
         const element = ArrayTableB3[245];
-        const table = await document.getElementById("B3TR36")
+        const table = await document.getElementById("B3TR29")
         table.insertAdjacentHTML('beforeend', `
        <td> ${element[index]} </td>
         `)
       }
       for (let index = 0; index < ArrayTableB3[246].length; index++) {
         const element = ArrayTableB3[246];
-        const table = await document.getElementById("B3TR37")
+        const table = await document.getElementById("B3TR30")
         table.insertAdjacentHTML('beforeend', `
        <td> ${element[index]} </td>
         `)
       }
       for (let index = 0; index < ArrayTableB3[247].length; index++) {
         const element = ArrayTableB3[247];
+        const table = await document.getElementById("B3TR31")
+        table.insertAdjacentHTML('beforeend', `
+       <td> ${element[index]} </td>
+        `)
+      }
+      for (let index = 0; index < ArrayTableB3[248].length; index++) {
+        const element = ArrayTableB3[248];
+        const table = await document.getElementById("B3TR32")
+        table.insertAdjacentHTML('beforeend', `
+       <td> ${element[index]} </td>
+        `)
+      }
+      for (let index = 0; index < ArrayTableB3[249].length; index++) {
+        const element = ArrayTableB3[249];
+        const table = await document.getElementById("B3TR33")
+        table.insertAdjacentHTML('beforeend', `
+       <td> ${element[index]} </td>
+        `)
+      }
+      for (let index = 0; index < ArrayTableB3[250].length; index++) {
+        const element = ArrayTableB3[250];
+        const table = await document.getElementById("B3TR34")
+        table.insertAdjacentHTML('beforeend', `
+       <td> ${element[index]} </td>
+        `)
+      }
+      for (let index = 0; index < ArrayTableB3[251].length; index++) {
+        const element = ArrayTableB3[251];
+        const table = await document.getElementById("B3TR35")
+        table.insertAdjacentHTML('beforeend', `
+       <td> ${element[index]} </td>
+        `)
+      }
+      for (let index = 0; index < ArrayTableB3[252].length; index++) {
+        const element = ArrayTableB3[252];
+        const table = await document.getElementById("B3TR36")
+        table.insertAdjacentHTML('beforeend', `
+       <td> ${element[index]} </td>
+        `)
+      }
+      for (let index = 0; index < ArrayTableB3[253].length; index++) {
+        const element = ArrayTableB3[253];
+        const table = await document.getElementById("B3TR37")
+        table.insertAdjacentHTML('beforeend', `
+       <td> ${element[index]} </td>
+        `)
+      }
+      for (let index = 0; index < ArrayTableB3[254].length; index++) {
+        const element = ArrayTableB3[254];
         const table = await document.getElementById("B3TR38")
         table.insertAdjacentHTML('beforeend', `
        <td> ${element[index]} </td>
@@ -938,11 +939,11 @@ class Main extends Component {
       }
     }
     const CallFunctionsForEachOne = async () => {
-  //   await  firtTableBarchart()
-//    await  SecondTableCmegroup()
-// await  ThirdTableMain()
-      //  await   fivethTable()
-      // await fourthTable()
+     await  firtTableBarchart()
+    await  SecondTableCmegroup()
+ await  ThirdTableMain()
+        await   fivethTable()
+     await fourthTable()
 
     }
 
@@ -1173,11 +1174,11 @@ class Main extends Component {
               <tr id="B3TR15"><td></td></tr>
               <tr id="B3TR16"><td></td></tr>
               <tr id="B3TR17"><td></td></tr>
-              <tr id="B3TR18"><td></td></tr>
+              <tr id="B3TR18"></tr>
               <tr id="B3TR19"><td></td> </tr>
               <tr id="B3TR20"><td></td></tr>
               <tr id="B3TR21"><td></td></tr>
-              <tr id="B3TR22"></tr>
+              <tr id="B3TR22"><td></td></tr>
               <tr id="B3TR23"><td></td></tr>
               <tr id="B3TR24"><td></td></tr>
               <tr id="B3TR25"><td></td></tr>
