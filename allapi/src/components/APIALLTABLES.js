@@ -10,6 +10,7 @@ class Main extends Component {
     const firtTableBarchart = async () => {
       const response = await Axios.get('http://localhost:8080/GettingDatasBarchart')
       const ArrayTableBarchart = response.data
+      console.log(ArrayTableBarchart)
       const firstrow = async () => {
         for (let index0 = 0; index0 < 10; index0++) {
           let element0 = ArrayTableBarchart[0]
@@ -939,9 +940,9 @@ class Main extends Component {
       }
     }
     const CallFunctionsForEachOne = async () => {
-     await  firtTableBarchart()
+   //  await  firtTableBarchart()
     await  SecondTableCmegroup()
- await  ThirdTableMain()
+ ///await  ThirdTableMain()
         await   fivethTable()
      await fourthTable()
 
