@@ -26,22 +26,23 @@ app.get("/GettingDatasBarchart", async (req, res) => {
 
     const GetingDatas = await page.evaluate(async () => {
 
-        const TBODYBarchart = await document.querySelectorAll("tr")
+        const TBODYBarchart = await document.querySelector("#table-guid-825ac594-06a0-9471-9933-0e58750f537b").shadowRoot.querySelector("#_grid")
         let TBODYBarchartArray = []
-        for (let indexBODY = 0; indexBODY < TBODYBarchart.length; indexBODY++) {
+        console.log(TBODYBarchart )
+       /* for (let indexBODY = 0; indexBODY < TBODYBarchart.length; indexBODY++) {
             const elementsBODYBarchart = TBODYBarchart[indexBODY].textContent
             const elementsBODYBarchartClean = elementsBODYBarchart.replace(/(\r\n|\n|\r)/gm, " ")
             const elementsBODYBarchartSpliting = elementsBODYBarchartClean.replace(/\s{2,}/g, ' ')
             const elementsBODYBarchartSplitingMore = elementsBODYBarchartSpliting.split(" ")
             TBODYBarchartArray.push(elementsBODYBarchartSplitingMore)
-        }
+        }*/
         const JsonTBODYBarchartArray = JSON.stringify(TBODYBarchartArray)
         return (JsonTBODYBarchartArray)
 
     })
-
+    console.log(GetingDatas)
     res.send(GetingDatas)
-    await browser.close()
+    //await browser.close()
 
 });
 
