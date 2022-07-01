@@ -72,9 +72,18 @@ app.get("/GettingDatasB3", async (req, res) => {
                 console.log(lastClickPosition);
             } 
             document.addEventListener('mouseover', storePosition, true);*/
-        const TBODYB3 = await document.querySelectorAll('tr')
+
+        const TBODYB3_BOIGORDO = await document.querySelectorAll("#tblDadosAjustes > tbody > tr:nth-child(33)")
+        const TBODYB3_DOLAR= await document.querySelector("#tblDadosAjustes > tbody > tr:nth-child(243)")
+        const TBODYB3_MILHO = document.querySelector("#tblDadosAjustes > tbody > tr:nth-child(58)")
         let TBODYB3Array = []
-        for (let indexB3 = 0; indexB3 <=255; indexB3++) {
+            const TBODYB3_BOIGORDOtds = TBODYB3_BOIGORDO
+        for (let indexBoi = 0; indexBoi < array.length; indexBoi++) {
+            const elementBoi = array[indexBoi]
+        
+        
+
+     /*   for (let indexB3 = 0; indexB3 <=255; indexB3++) {
             const elementB3TR = await TBODYB3[indexB3]
             const getingTDSB3 = await elementB3TR.querySelectorAll("td")
             const GetingTextContentTDsB3 = (getingTDSB3) => {
@@ -85,7 +94,7 @@ app.get("/GettingDatasB3", async (req, res) => {
 
                 }
                 return (ArrayForFluxe)
-            }
+            }*/
             TBODYB3Array.push(GetingTextContentTDsB3(getingTDSB3))
         }
         const JsonTBODYB3Array = JSON.stringify(TBODYB3Array)
